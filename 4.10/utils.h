@@ -5,6 +5,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
+#include <limits.h>
+#include <ctype.h>
+#include <time.h>
+#include <math.h>
+#include <complex.h>
 
 typedef unsigned long ul;
 typedef unsigned long long ull;

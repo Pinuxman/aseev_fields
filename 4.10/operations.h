@@ -9,7 +9,7 @@ void add();
 void mult();
 void sub();
 void pow();
-void div();
+void _div();
 void rem();
 void xor1();
 void and1();

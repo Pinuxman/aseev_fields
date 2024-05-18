@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/interpreter.dir/main.c.o CMakeFiles/interpreter.dir/utils.c.o CMakeFiles/interpreter.dir/operations.c.o CMakeFiles/interpreter.dir/structures/stack.c.o -o interpreter 
