@@ -11,6 +11,8 @@
 #include <math.h>
 #include <complex.h>
 
+#define MAX_SYNONYMS 20
+
 typedef unsigned long ul;
 typedef unsigned long long ull;
 
@@ -26,8 +28,24 @@ typedef struct var{
     char* val;
 }var;
 
-void print_error_info(status_code st);
+typedef struct {
+    char* key;
+    char* value;
+} KeyValuePair;
+
+typedef struct {
+    KeyValuePair pairs[MAX_SYNONYMS];
+    int count;
+} SynonymTable;
+
+void print_error_info(FILE* stream, status_code st);
 void free_all(ul cnt, ...);
 status_code read_settings_file(char const* file);
 status_code debug();
+
+SynonymTable* create_table();
+void add_synonym(SynonymTable* table, const char* key, const char* value);
+const char* get_synonym(SynonymTable* table, const char* key);
+void free_table(SynonymTable* table);
+
 #endif
