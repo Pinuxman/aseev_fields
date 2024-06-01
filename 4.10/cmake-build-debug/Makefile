@@ -201,6 +201,30 @@ structures/stack.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/structures/stack.c.s
 .PHONY : structures/stack.c.s
 
+structures/trie.o: structures/trie.c.o
+.PHONY : structures/trie.o
+
+# target to build an object file
+structures/trie.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/structures/trie.c.o
+.PHONY : structures/trie.c.o
+
+structures/trie.i: structures/trie.c.i
+.PHONY : structures/trie.i
+
+# target to preprocess a source file
+structures/trie.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/structures/trie.c.i
+.PHONY : structures/trie.c.i
+
+structures/trie.s: structures/trie.c.s
+.PHONY : structures/trie.s
+
+# target to generate assembly for a file
+structures/trie.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/structures/trie.c.s
+.PHONY : structures/trie.c.s
+
 utils.o: utils.c.o
 .PHONY : utils.o
 
@@ -243,6 +267,9 @@ help:
 	@echo "... structures/stack.o"
 	@echo "... structures/stack.i"
 	@echo "... structures/stack.s"
+	@echo "... structures/trie.o"
+	@echo "... structures/trie.i"
+	@echo "... structures/trie.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"

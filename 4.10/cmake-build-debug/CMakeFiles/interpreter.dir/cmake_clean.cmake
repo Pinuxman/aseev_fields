@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/interpreter.dir/operations.c.o.d"
   "CMakeFiles/interpreter.dir/structures/stack.c.o"
   "CMakeFiles/interpreter.dir/structures/stack.c.o.d"
+  "CMakeFiles/interpreter.dir/structures/trie.c.o"
+  "CMakeFiles/interpreter.dir/structures/trie.c.o.d"
   "CMakeFiles/interpreter.dir/utils.c.o"
   "CMakeFiles/interpreter.dir/utils.c.o.d"
   "interpreter"

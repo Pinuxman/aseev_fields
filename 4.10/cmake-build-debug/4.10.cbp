@@ -97,6 +97,12 @@
 		<Unit filename="/mnt/c/Users/PW0/aseev_fields/4.10/structures/stack.h">
 			<Option target="interpreter"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/PW0/aseev_fields/4.10/structures/trie.c">
+			<Option target="interpreter"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/PW0/aseev_fields/4.10/structures/trie.h">
+			<Option target="interpreter"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/PW0/aseev_fields/4.10/utils.c">
 			<Option target="interpreter"/>
 		</Unit>

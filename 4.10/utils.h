@@ -19,7 +19,10 @@ typedef unsigned long long ull;
 typedef enum status_code{
     OK,
     FILE_ERROR,
+    ARGS_ERROR,
+    DIV_BY_ZERO,
     BAD_ALOC,
+    INVALID_FORMAT,
     UNDEF_ERR,
 }status_code;
 
