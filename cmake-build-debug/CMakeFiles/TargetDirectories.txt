@@ -1,0 +1,3 @@
+/mnt/c/Users/PW0/aseev_fields/cmake-build-debug/CMakeFiles/aseev_fields.dir
+/mnt/c/Users/PW0/aseev_fields/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/PW0/aseev_fields/cmake-build-debug/CMakeFiles/rebuild_cache.dir

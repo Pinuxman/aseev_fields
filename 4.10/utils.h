@@ -3,14 +3,24 @@
 
 #include <stdio.h>
 #include <string.h>
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <stdbool.h>
+=======
+#include <stdint.h>
+>>>>>>> bcb037191358aa5d18f967f5cb5455f3db70a841
 #include <limits.h>
 #include <ctype.h>
 #include <time.h>
 #include <math.h>
+<<<<<<< HEAD
 #include <stdarg.h>
 #include <complex.h>
+=======
+#include <complex.h>
+
+#define MAX_SYNONYMS 20
+>>>>>>> bcb037191358aa5d18f967f5cb5455f3db70a841
 
 typedef enum status_codes {
     OK = 0,
@@ -31,6 +41,7 @@ typedef enum status_codes {
     WRONG_SYSTEM = 13,
 } status_codes;
 
+<<<<<<< HEAD
 void fprint_err(FILE* stream, int st) {
     switch (st)
     {
@@ -57,11 +68,23 @@ void fprint_err(FILE* stream, int st) {
     case TOO_MUCH_ITERATIONS:
         fprintf(stream, "too much iterations\n");
         break;
+=======
+typedef enum status_code{
+    OK,
+    FILE_ERROR,
+    ARGS_ERROR,
+    DIV_BY_ZERO,
+    BAD_ALOC,
+    INVALID_FORMAT,
+    UNDEF_ERR,
+}status_code;
+>>>>>>> bcb037191358aa5d18f967f5cb5455f3db70a841
 
     case BRACKETS_NOT_BALANCED:
         fprintf(stream, "brackets are not balanced\n");
         break;
 
+<<<<<<< HEAD
     case WRONG_ELEMENT:
         fprintf(stream, "wrong element\n");
         break;
@@ -90,3 +113,26 @@ void fprint_err(FILE* stream, int st) {
 }
 
 #endif
+=======
+typedef struct {
+    char* key;
+    char* value;
+} KeyValuePair;
+
+typedef struct {
+    KeyValuePair pairs[MAX_SYNONYMS];
+    int count;
+} SynonymTable;
+
+void print_error_info(FILE* stream, status_code st);
+void free_all(ul cnt, ...);
+status_code read_settings_file(char const* file);
+status_code debug();
+
+SynonymTable* create_table();
+void add_synonym(SynonymTable* table, const char* key, const char* value);
+const char* get_synonym(SynonymTable* table, const char* key);
+void free_table(SynonymTable* table);
+
+#endif
+>>>>>>> bcb037191358aa5d18f967f5cb5455f3db70a841

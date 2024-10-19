@@ -3,5 +3,10 @@ project(4.10)
 set(CMAKE_C_STANDARD 99) 
 set(CMAKE_C_STANDARD_REQUIRED TRUE)
 
-set(SOURCE_FILES main.c utils.c operations.c)
+set(SOURCE_FILES main.c utils.c operations.c
+        structures/stack.c
+        structures/stack.h
+        structures/trie.h
+        structures/trie.c
+        structures/trie.c)
 add_executable(interpreter ${SOURCE_FILES})
